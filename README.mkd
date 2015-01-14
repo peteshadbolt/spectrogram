@@ -1,0 +1,11 @@
+1. Get an image
+
+![Image of a dog](test.jpg)
+
+2. `$ python spectrogram.py test.jpg` ... `Wrote test.jpg.wav`
+
+3. `$ sox test.jpg.wav -n spectrogram`
+
+![Spectrogram of a dog](spectrogram.png)
+
+Uses [SoX](http://sox.sourceforge.net/sox.html).
