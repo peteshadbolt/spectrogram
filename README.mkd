@@ -8,4 +8,6 @@
 
 ![Spectrogram of a dog](spectrogram.png)
 
+Aphex Twin did it before me.
+
 Uses [SoX](http://sox.sourceforge.net/sox.html).
