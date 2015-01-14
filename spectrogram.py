@@ -19,8 +19,8 @@ def make_wav(image_filename):
     image = np.sum(image, axis = 2).T[:, ::-1]
     image = image**2
 
-    output_file = wave.open(image_filename+'.wav', 'w')
-    output_file.setparams((1, 2, 44100, 0, 'NONE', 'not compressed'))
+    output_file = wave.open(image_filename+".wav", "w")
+    output_file.setparams((1, 2, 44100, 0, "NONE", "not compressed"))
 
     pb = ProgressBar().start()
     n = float(len(image))
@@ -32,7 +32,7 @@ def make_wav(image_filename):
     print "Wrote %s.wav" % image_filename
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import sys
     make_wav(sys.argv[1])
 
