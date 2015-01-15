@@ -16,7 +16,7 @@ def make_wav(image_filename):
     # Fourier transform, normalize, remove DC bias
     data = np.fft.irfft(image, h*2, axis=1).reshape((w*h*2))
     data -= np.average(data)
-    data *= (2**15.-1)/np.amax(data)
+    data *= (2**15-1.)/np.amax(data)
     data = array("h", np.int_(data)).tostring()
 
     # Write to disk
