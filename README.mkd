@@ -1,11 +1,10 @@
-1. Get an image
-2. `$ python spectrogram.py test.jpg` ... `Wrote test.jpg.wav`
-3. `$ sox test.jpg.wav -n spectrogram`
+```bash
+$ python spectrogram.py test.jpg
+Wrote test.jpg.wav
+$ sox test.jpg.wav -n spectrogram`
+```
 
-Aphex Twin did it before me.
-
-![Image of a dog](test.jpg)
+Uses [SoX](http://sox.sourceforge.net/sox.html). Aphex Twin did it before me.
 
 ![Spectrogram of a dog](spectrogram.png)
 
-Uses [SoX](http://sox.sourceforge.net/sox.html).
