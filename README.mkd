@@ -1,7 +1,7 @@
 ```bash
 $ python spectrogram.py test.jpg
 Wrote test.jpg.wav
-$ sox test.jpg.wav -n spectrogram`
+$ sox test.jpg.wav -n spectrogram
 ```
 
 Uses [SoX](http://sox.sourceforge.net/sox.html). Aphex Twin did it before me.
